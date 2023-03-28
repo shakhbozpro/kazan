@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Казан - магазин посуды</title>
+  <link rel="stylesheet" href="./dist/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="./assets/styles/main.css"> -->
+  <link rel="stylesheet" href="./assets/styles/main.min.css">
+  <link rel="stylesheet" href="vender/slick/slick.css">
+  <link rel="stylesheet" href="vender/slick/slick-theme.css">
+</head>
+
+<body>
+  <!-- ? Site header -->
+  <header class="site-header xl:py-3 bg-white">
+    <div class="container mx-auto xl:px-5">
+      <div class="flex justify-between items-center">
+        <a href="#">
+          <img src="./assets/images/site-logo.png" alt="Site logo" width="225" height="54">
+        </a>
+        <nav
+          class="navbar max-w-[360px] w-full h-screen absolute top-0 left-0 z-50 pt-[20px] px-6 bg-white translate-x-[-100%] xl:w-auto xl:h-auto xl:static xl:p-0 xl:bg-transparent xl:translate-x-0">
+          <div class="flex items-center justify-between mb-[10px] xl:hidden">
+            <a href="#">
+              <img src="./assets/images/site-logo.png" alt="Site logo" width="200" height="54">
+            </a>
+            <button class="navbar-cls-btn">
+              <i class="fa-solid fa-x text-[14px] text-neutral-500"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col gap-y-5 xl:flex-row xl:items-center xl:gap-y-0 xl:gap-x-10">
+            <li>
+              <a class="navbar-link active block py-[15px] tracking-[1.5px] text-[14px] text-zinc-500 uppercase xl:font-semibold xl:text-[16px] xl:py-2"
+                href="#">Home</a>
+            </li>
+            <li>
+              <a class="navbar-link block py-[15px] tracking-[1.5px] text-[14px] text-zinc-500 uppercase xl:font-semibold xl:text-[16px] xl:py-2"
+                href="#">Products</a>
+            </li>
+            <li>
+              <a class="navbar-link block py-[15px] tracking-[1.5px] text-[14px] text-zinc-500 uppercase xl:font-semibold xl:text-[16px] xl:py-2"
+                href="#">About us</a>
+            </li>
+            <li>
+              <a class="navbar-link block py-[15px] tracking-[1.5px] text-[14px] text-zinc-500 uppercase xl:font-semibold xl:text-[16px] xl:py-2"
+                href="#">Branches</a>
+            </li>
+            <li>
+              <a class="navbar-link block py-[15px] tracking-[1.5px] text-[14px] text-zinc-500 uppercase xl:font-semibold xl:text-[16px] xl:py-2"
+                href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hidden xl:flex xl:items-center">
+          <i class="fa-solid fa-phone mr-3 p-3 text-xl text-white bg-blue-900 rounded-full"></i>
+          <div class="flex flex-col">
+            <span class="mb-1 font-semibold tracking-[2px] text-[14px] text-zinc-500 uppercase">Order now</span>
+            <a class="font-semibold tracking-[0.5px] text-xl text-blue-900" href="tel:(+62) 191 767 898">(+62) 191 767
+              898</a>
+          </div>
+        </div>
+        <button class="navbar-open-btn xl:hidden">
+          <i class="fa-solid fa-bars p-[22px] text-xl text-white bg-blue-900"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ? Site main -->
+  <main>
+    <section>
+      <div class="container mx-auto xl:px-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:items-center">
+          <div class="p-5 xl:p-14">
+            <h1 class="mt-0 mb-2 font-semibold uppercase text-blue-900 lg:mb-3 xl:tracking-wider xl:text-7xl">
+              Fresh from the ocean to your plate
+            </h1>
+            <p class="italic leading-6 text-neutral-500 xl:text-[20px]">
+              Our nautical-themed restaurant has been Est. Since 1992.
+              <br>
+              We specializes in serving a variety of seafood
+              dishes.
+            </p>
+          </div>
+          <ul class="hero-carousel-list">
+            <li>
+              <img class="max-w-[720px] xl:min-h-[600px]" src="./assets/images/cup.jpg" alt="cups" width="720"
+                height="650">
+            </li>
+            <li>
+              <img class="max-w-[720px] xl:min-h-[600px]" src="./assets/images/vilka.jpg" alt="plug" width="720"
+                height="650">
+            </li>
+            <li>
+              <img class="max-w-[720px] xl:min-h-[600px]" src="./assets/images/blender.jpg" alt="blender" width="720"
+                height="650">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 xl:py-[100px]">
+      <div class="container mx-auto xl:px-10">
+        <div class="mb-5 text-center">
+          <h2 class="mb-3 font-semibold text-3xl uppercase text-blue-900 lg:text-5xl">We offer the best for you</h2>
+          <p class="italic tracking-wider text-neutral-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            eiusmod tempor.
+          </p>
+        </div>
+        <ul class="grid grid-cols-1 gap-y-20 text-center md:grid-cols-2 xl:grid-cols-4 xl:gap-y-16">
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/choynak.jpg" alt="Choynak" width="272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Choynak</h3>
+          </li>
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/tarelka.jpg" alt="Likopcha" width="272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Likopcha</h3>
+          </li>
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/tova2.jpg" alt="Tova" width="272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Tova</h3>
+          </li>
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/tovoq.png" alt="Tovoq" width="272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Tovoq</h3>
+          </li>
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/tovoq.png" alt="Tovoq" width="272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Tovoq</h3>
+          </li>
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/tova2.jpg" alt="Tova" width="272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Tova</h3>
+          </li>
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/tarelka.jpg" alt="Likopcha" width="272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Likopcha</h3>
+          </li>
+          <li class="products-item pt-3">
+            <img class="mx-auto mb-5" src="./assets/images/choynak.jpg" alt="Choynak width=" 272" height="272">
+            <h3 class="text-2xl text-blue-900 lg:text-3xl">Choynak</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-10 xl:py-[100px]">
+      <video class="w-full xl:h-[630px]" controls src="./assets/videos/kazan-rolik.mp4" height="630"></video>
+    </section>
+
+    <section class="py-10 xl:py-[50px]">
+      <div class="container mx-auto px-5 xl:px-10">
+        <div>
+          <h2 class="mb-8 font-semibold text-3xl uppercase text-center text-blue-900 lg:text-5xl">Biz bilan bog'laning
+          </h2>
+          <div class="grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-y-0 md:gap-x-5 xl:gap-x-10">
+            <div class="flex flex-col gap-y-8 p-5 italic bg-blue-900  md:p-8 lg:p-10 lg:text-xl">
+              <p class="flex items-center text-white">
+                <i class="fa-solid fa-bullseye mr-2 p-3 text-white bg-blue-500 rounded-full"></i>
+                Mo'ljal: Farhod bozoridan Vatanga qarab yurganda Shirin chorrahaga 100 metr yetmasdan
+              </p>
+              <p class="flex items-center text-white">
+                <i class="fa-sharp fa-solid fa-clock mr-2 p-3 text-white bg-blue-500 rounded-full"></i>
+                Ish vqati 09:00 dan 20:00 gacha
+              </p>
+              <a class="flex items-center text-white" href="tel:+99899-037-74-77">
+                <i class="fa-solid fa-phone mr-2 p-3 text-white bg-blue-500 rounded-full"></i>
+                +99899-037-74-77
+              </a>
+              <ul class="flex flex-col gap-y-8 text-white">
+                <li>
+                  <a class="flex items-center" href="https://www.instagram.com/kazan_uzbekistan/" target="blank">
+                    <i class="fa-brands fa-instagram mr-2 p-3 text-white bg-blue-500 rounded-full"></i>
+                    kazan_uzbekistan
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center" href="https://t.me/Kazan_Uzbekistan_bot" target="blank">
+                    <i class="fa-brands fa-telegram mr-2 p-3 text-white bg-blue-500 rounded-full"></i>
+                    @Kazan_Uzbekistan_bot
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <iframe class="w-full"
+              src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5996.410429787875!2d69.181308!3d41.282638!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE2JzU3LjUiTiA2OcKwMTAnNTIuNyJF!5e0!3m2!1sru!2s!4v1679916449594!5m2!1sru!2s"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ? Site footer -->
+  <footer class="site-footer py-5 lg:py-8">
+    <div class="container mx-auto px-5 xl:px-10">
+      <div class="text-center">
+        <p class="italic capitalize text-xl text-blue-900">Copyright &copy; 2023 <span
+            class="font-semibold">казан</span>. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ? Slick js -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="vender/slick/slick.js"></script>
+  <!-- ? Main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
