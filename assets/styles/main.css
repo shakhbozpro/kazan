@@ -271,15 +271,12 @@ ul, ol {
 /* ! Products styles */
 .products-item {
   border-top: 1px solid transparent;
-  -webkit-transition: border-top 0.2s ease;
-  -o-transition: border-top 0.2s ease;
-  transition: border-top 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .products-item:hover {
   border-color: #1a275d;
-}
-
-/* ! Footer styles */
-.site-footer {
-  border-top: 1px solid #1a275d;
+  -webkit-box-shadow: 0 0 15px 3px #d4d4d4;
+          box-shadow: 0 0 15px 3px #d4d4d4;
 }
