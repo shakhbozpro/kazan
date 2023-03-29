@@ -280,3 +280,16 @@ ul, ol {
   -webkit-box-shadow: 0 0 15px 3px #d4d4d4;
           box-shadow: 0 0 15px 3px #d4d4d4;
 }
+
+/* ! Contact styles */
+.branches-tab-btn.active {
+  color: #1a275d;
+  text-decoration: underline;
+}
+.branches-item {
+  display: none !important;
+}
+.branches-item.active {
+  display: -ms-grid !important;
+  display: grid !important;
+}

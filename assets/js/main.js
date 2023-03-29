@@ -2,6 +2,8 @@ const navbar = document.querySelector('.navbar');
 const navbarOpenBtn = document.querySelector('.navbar-open-btn');
 const navbarCloseBtn = document.querySelector('.navbar-cls-btn');
 const navbarLinks = document.querySelectorAll('.navbar-link');
+const branchesTabBtns = document.querySelectorAll('.branches-tab-btn');
+const branchesTabItems = document.querySelectorAll('.branches-item');
 
 // ! Navbar opening and closing
 navbarOpenBtn.addEventListener('click', () => {
@@ -28,3 +30,28 @@ $('.hero-carousel-list').slick({
   autoplaySpeed: 3000,
   arrows: false,
 });
+
+// ! Branches tab
+branchesTabBtns.forEach(item => {
+  item.addEventListener('click', () => {
+    let currentBtn = item;
+    let branchTabId = currentBtn.getAttribute('data-tab');
+    let currentBranch = document.querySelector(branchTabId);
+
+    if (!currentBtn.classList.contains('active')) {
+      branchesTabBtns.forEach(item => {
+        item.classList.remove('active');
+      });
+
+      branchesTabItems.forEach(item => {
+        item.classList.remove('active');
+      });
+
+      currentBtn.classList.add('active');
+      currentBranch.classList.add('active');
+    }
+
+  });
+});
+
+document.querySelector('.branches-tab-btn').click();
