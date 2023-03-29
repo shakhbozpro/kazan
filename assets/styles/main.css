@@ -282,9 +282,13 @@ ul, ol {
 }
 
 /* ! Contact styles */
+.branches-tab-btn {
+  text-decoration: underline;
+  color: #1835a9;
+}
 .branches-tab-btn.active {
   color: #1a275d;
-  text-decoration: underline;
+  font-style: italic;
 }
 .branches-item {
   display: none !important;
