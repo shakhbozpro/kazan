@@ -770,10 +770,6 @@ video {
   padding-top: 20px;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -794,6 +790,18 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[21px\] {
+  font-size: 21px;
 }
 
 .font-semibold {
@@ -826,10 +834,6 @@ video {
 
 .tracking-\[2px\] {
   letter-spacing: 2px;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
 }
 
 .text-blue-900 {
@@ -886,6 +890,10 @@ video {
 
   .lg\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:p-10 {
