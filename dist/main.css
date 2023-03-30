@@ -770,6 +770,10 @@ video {
   padding-top: 20px;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1026,8 +1030,8 @@ video {
     padding-bottom: 50px;
   }
 
-  .xl\:text-7xl {
-    font-size: 4.5rem;
+  .xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
